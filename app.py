@@ -45,7 +45,7 @@ st.markdown(new_title, unsafe_allow_html=True)
 
 #st.markdown("List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Litter deposit, Dataset, Data type, Goal-of-study, Region, Approach, Implications.")
 
-n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional Neural Networks (CNN), Object Detection (OD), Feed Forward Neural Network (FFNN), Machine Learning Algorithms (MLA), Generative Adversarial Networks (GAN)")</p>'
+n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional Neural Networks (CNN), Object Detection (OD), Feed Forward Neural Network (FFNN), Machine Learning Algorithms (MLA), Generative Adversarial Networks (GAN)</p>'
 
 AgGrid(shows, gridOptions=gridOptions, allow_unsafe_jscode=True, enable_enterprise_modules=True)
 
