@@ -11,7 +11,7 @@ from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 st.set_page_config(page_title="Marine Litter Modelling", layout="wide") 
 
-new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: 3 March, 2022</p>'
+new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: 10 March, 2022</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 st.title("Using Artificial Intelligence to Support Marine Litter Research: An Online Database")
