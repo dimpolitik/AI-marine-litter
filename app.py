@@ -27,11 +27,11 @@ st.markdown("**Author:** Dimitris Politikos, **Institute:** Hellenic Centre for 
 
 #st.markdown("check out this [link](%s)" % url)
 
-xls = pd.ExcelFile('screening_deep_site.xlsx')
+xls = pd.ExcelFile('screening_deep_sitee.xlsx')
 shows = pd.read_excel(xls)
 shows['Year'] = shows['Year'].astype(str)
 
-st.image('world_map.png', width = 2500)
+st.image('world_map.png', width = 1500)
 
 gb = GridOptionsBuilder.from_dataframe(shows)
 gb.configure_pagination()
