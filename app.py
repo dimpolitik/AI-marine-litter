@@ -11,7 +11,7 @@ from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 st.set_page_config(page_title="Marine Litter Modelling", layout="wide") 
 
-new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: 10 March, 2022</p>'
+new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: 20 April, 2022</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 st.title("Using Artificial Intelligence to Support Marine Litter Research: An Online Database")
@@ -27,11 +27,11 @@ st.markdown("**Author:** Dimitris Politikos, **Institute:** Hellenic Centre for 
 
 #st.markdown("check out this [link](%s)" % url)
 
-xls = pd.ExcelFile('screening_deep_site.xlsx')
+xls = pd.ExcelFile('screening_deep_sitee.xlsx')
 shows = pd.read_excel(xls)
 shows['Year'] = shows['Year'].astype(str)
 
-st.image('world_map.png')
+st.image('world_map.png', width = 80)
 
 gb = GridOptionsBuilder.from_dataframe(shows)
 gb.configure_pagination()
@@ -40,7 +40,7 @@ gb.configure_side_bar()
 gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, aggFunc="sum", editable=True)
 gridOptions = gb.build()
 
-new_title = '<p style="font-family:calibri; font-size: 20px;">List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Litter deposit, Dataset, Data type, Goal-of-study, Region, Approach<sup>1</sup>, Implications.</p>'
+new_title = '<p style="font-family:calibri; font-size: 20px;">List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Title, doi, Region, Litter deposit, Dataset type, Dataset access, Implications, Task, Architecture<sup>1</sup>.</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 #st.markdown("List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Litter deposit, Dataset, Data type, Goal-of-study, Region, Approach, Implications.")
