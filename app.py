@@ -31,7 +31,7 @@ xls = pd.ExcelFile('screening_deep_site.xlsx')
 shows = pd.read_excel(xls)
 shows['Year'] = shows['Year'].astype(str)
 
-st.image('world_map.png', width = 80)
+st.image('world_map.png', width = 2500)
 
 gb = GridOptionsBuilder.from_dataframe(shows)
 gb.configure_pagination()
