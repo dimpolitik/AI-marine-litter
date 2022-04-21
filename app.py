@@ -9,8 +9,6 @@ import pandas as pd
 import streamlit as st 
 from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
-import pyautogui
-
 
 st.set_page_config(page_title="Marine Litter Modelling", layout="wide") 
 
@@ -48,7 +46,6 @@ n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>:
 AgGrid(shows, gridOptions=gridOptions, allow_unsafe_jscode=True, enable_enterprise_modules=True)
 st.markdown(n, unsafe_allow_html=True)
 
-if st.button("Reset"):
-    pyautogui.hotkey("ctrl","F5")
+
 
 
