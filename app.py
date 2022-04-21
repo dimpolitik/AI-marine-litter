@@ -45,3 +45,14 @@ n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>:
 AgGrid(shows, gridOptions=gridOptions, allow_unsafe_jscode=True, enable_enterprise_modules=True)
 
 st.markdown(n, unsafe_allow_html=True)
+
+placeholder = st.empty()
+
+with placeholder.container():
+    st.title("Reload")
+    btn = st.button("Reload")
+
+#If btn is pressed or True
+if btn:
+    #This would empty everything inside the container
+    placeholder.empty()
