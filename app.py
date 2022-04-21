@@ -9,6 +9,9 @@ import pandas as pd
 import streamlit as st 
 from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
+import pyautogui
+
+
 st.set_page_config(page_title="Marine Litter Modelling", layout="wide") 
 
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: 20 April, 2022</p>'
@@ -43,16 +46,9 @@ st.markdown(new_title, unsafe_allow_html=True)
 n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional neural networks (CNN), object detection architectures (OD), feed forward neural networks (FFNN), machine learning algorithms (MLA), endoder-decoder architectures (EDA), instance segmentation architectures (Inst-Seg) and semantic segmentation architectures (Seg-Sem).</p>'
 
 AgGrid(shows, gridOptions=gridOptions, allow_unsafe_jscode=True, enable_enterprise_modules=True)
-
 st.markdown(n, unsafe_allow_html=True)
 
-placeholder = st.empty()
+if st.button("Reset"):
+    pyautogui.hotkey("ctrl","F5")
 
-with placeholder.container():
-    st.title("Reload")
-    btn = st.button("Reload")
 
-#If btn is pressed or True
-if btn:
-    #This would empty everything inside the container
-    placeholder.empty()
