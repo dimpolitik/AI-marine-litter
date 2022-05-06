@@ -41,7 +41,7 @@ st.markdown(new_title, unsafe_allow_html=True)
 
 #st.markdown("List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Litter deposit, Dataset, Data type, Goal-of-study, Region, Approach, Implications.")
 
-n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional neural networks (CNN), object detection architectures (OD), feed forward neural networks (FFNN), machine learning algorithms (MLA), endoder-decoder architectures (EDA), instance segmentation architectures (Inst-Seg) and semantic segmentation architectures (Seg-Sem).</p>'
+n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional neural networks (CNN), object detection architectures (OD), feed forward neural networks (FFNN), machine learning algorithms (MLA), endoder-decoder architectures (ED), instance segmentation architectures (Inst-Seg) and semantic segmentation architectures (Seg-Sem).</p>'
 
 AgGrid(shows, gridOptions=gridOptions, allow_unsafe_jscode=True, enable_enterprise_modules=True)
 st.markdown(n, unsafe_allow_html=True)
