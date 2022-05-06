@@ -16,7 +16,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">La
 st.markdown(new_title, unsafe_allow_html=True)
 
 st.title("Using Artificial Intelligence to Support Marine Litter Research: An Online Database")
-st.markdown("**Author:** Dimitris Politikos, **Institute:** Hellenic Centre for Marine Research (HCMR), **email:** dimpolit@hcmr.gr")
+st.markdown("**Authors:** Dimitris Politikos, Argyro Adamopoulou, George Petasis, Francois Galgani. **Correspondence:** dimpolit@hcmr.gr")
 
 #url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
 #st.write("For more details, see the [link](%s)." % url)
