@@ -12,7 +12,7 @@ from st_aggrid.grid_options_builder import GridOptionsBuilder
 
 st.set_page_config(page_title="Marine Litter Modelling", layout="wide") 
 
-new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: June 2022</p>'
+new_title = '<p style="font-family:sans-serif; color:Green; font-size: 26px;">Last Update: November 2022</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 st.title("Using Artificial Intelligence to Support Marine Litter Research: An Online Database")
@@ -23,7 +23,7 @@ st.markdown("**Authors:** Dimitris Politikos, Argyro Adamopoulou, George Petasis
 
 #st.markdown("check out this [link](%s)" % url)
 
-xls = pd.ExcelFile('screening_deep.xlsx')
+xls = pd.ExcelFile('screening_deep_new.xlsx')
 shows = pd.read_excel(xls)
 shows['Year'] = shows['Year'].astype(str)
 
