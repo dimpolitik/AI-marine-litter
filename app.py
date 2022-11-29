@@ -36,12 +36,12 @@ gb.configure_side_bar()
 gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, aggFunc="sum", editable=True)
 gridOptions = gb.build()
 
-new_title = '<p style="font-family:calibri; font-size: 20px;">List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Title, doi, Region, Litter deposit, Dataset type, Dataset source, Sampling system, Usability, Task, Predictability, Architecture<sup>1</sup>.</p>'
+new_title = '<p style="font-family:calibri; font-size: 20px;">List of papers that use AI in marine macrolitter research. The user can filter papers based on several criteria such as Year, Title, doi, Region, Litter deposit, Dataset type, Dataset source, Sampling system, Usability, Task, Predictability, and Architecture<sup>1</sup>.</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 #st.markdown("List of papers that use AI in marine litter research. The user can filter papers based on several criteria such as Year, Litter deposit, Dataset, Data type, Goal-of-study, Region, Approach, Implications.")
 
-n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional neural networks (CNN), Object detection architectures (OD), Feed forward neural networks (FFNN), Machine learning algorithms (MLA), Endoder-decoder architectures (ED), Instance segmentation architectures (Inst-Seg) and Semantic segmentation architectures (Seg-Sem).</p>'
+n = '<p style="font-family:calibri; font-size: 16px;">Abbreviations<sup>1</sup>: Convolutional neural networks (CNN), Object detection architectures (OD), Feed forward neural networks (FFNN), Machine learning algorithms (MLA), Endoder-decoder architectures (ED), Instance segmentation architectures (Inst-Seg), Semantic segmentation architectures (Seg-Sem) and Clustering.</p>'
 
 AgGrid(shows, gridOptions=gridOptions, allow_unsafe_jscode=True, enable_enterprise_modules=True)
 st.markdown(n, unsafe_allow_html=True)
